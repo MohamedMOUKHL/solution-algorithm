@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithme de résolution</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Algorithme de résolution</h1>
+        
+        <div class="input-buttons">
+            <button class="btn" id="btnP">P</button>
+            <button class="btn" id="btnQ">Q</button>
+            <button class="btn" id="btnOpenParen">(</button>
+            <button class="btn" id="btnCloseParen">)</button>
+            <button class="btn" id="btnNegation">~</button>
+            <button class="btn" id="btnAnd">⋀</button>
+            <button class="btn" id="btnOr">v</button>
+            <button class="btn" id="btnImplication">-&gt;</button>
+        </div>
+        
+        <div class="input">
+            <input type="text" id="input" placeholder="Entrez votre formule">
+            <button class="btn" id="btnSubmit" onclick="resolve()">Submit</button>
+        </div>
+        
+        <div class="results">
+            <h2>Résultats :</h2>
+            <ul id="resultsList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
